@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bella Bao's Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/be6d9fdd26.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="#" onclick="showSection('profile')">Home</a></li>
+                    <li><a href="#" onclick="showSection('education')">Education</a></li>
+                    <li><a href="#" onclick="showSection('work')">Work Experience</a></li>
+                    <li><a href="#" onclick="showSection('skills')">Skills&Hobbies</a></li>
+                    <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="intro-text">
+                <p>H<span id="typing-text"></span></p>
+                <h1>Bella Bao</h1>
+            </div>
+            <img src="profile/1.svg" alt="Bella Bao" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+            <div class="profile-card">
+                <p class="summary">
+                    Bella Bao is a highly skilled software engineer with experience in developing and implementing advanced software solutions in health informatics and bioinformatics. She has interned at leading tech companies like Adobe and ByteDance, where she led projects that improved system efficiencies and reduced error rates. Bella is proficient in multiple programming languages and tools, and has a strong academic background with a focus on bioinformatics and computer science.
+                </p>
+            </div>
+        </section>
+        <div class="contacts">
+            <a href="mailto:bella.bao@yale.edu" aria-label="Email"><i class="fa-solid fa-envelope fa-lg"></i></a>
+            <a href="tel:+15105132529" aria-label="Phone"><i class="fa-solid fa-phone fa-lg"></i></a>
+        </div>
+        <section id="education" class="hidden">
+            <h2 class="section-title">Education</h2>
+            <div class="content-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2025 (expected)</div>
+                        <div class="timeline-content">
+                            <h3>M.S. in Health Informatics</h3>
+                            <span>Yale University<br></span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jun. 2023</div>
+                        <div class="timeline-content">
+                            <h3>B.S. in Bioinformatics</h3>
+                            <span>University of California, San Diego<br></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="hidden">
+            <h2>Work Experience</h2>
+            <div class="content-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">May. 2024 – Aug. 2023</div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer Intern</h3>
+                            <span>Adobe Inc.<br></span>
+                            <p>Led the end-to-end design and implementation of the Security Auto-Ticketing feature in the developer portal using the Backstage Framework and Nunjucks templating engine.</p>
+                            <p>Revamped Adobe’s microservice onboarding experience by automating field generation, using the React-jsonschema-form library.</p>
+                            <p>Developed a Golang-based tooling package in deployment repo, integrating Docker and Makefile targets.</p>
+                            <p>Enhanced Kubernetes-native deployment workflows by establishing a new CI pipeline in ArgoCD.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jun. 2023 – Aug. 2023</div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer Intern</h3>
+                            <span>ByteDance Inc.<br></span>
+                            <p>Designed and developed workflow management, user data management, and visualization functionalities through Golang.</p>
+                            <p>Redesigned and implemented the submission workflow involving three-step task submissions via HTTP and RPC.</p>
+                            <p>Designed and created data schema with ER diagrams, enhancing cross-team understanding of the database structure.</p>
+                            <p>Enhanced search functionality in the frontend using React.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul. 2022 – Jun. 2023</div>
+                        <div class="timeline-content">
+                            <h3>Machine learning Engineer Intern</h3>
+                            <span>Avellino, Inc.<br></span>
+                            <p>Developed a ML pipeline including data cleaning, data preprocessing, model training, data analysis to visualization.</p>
+                            <p>Implemented linear regression model with L1 and L2 regularization and logistic regression.</p>
+                            <p>Conducted feature importance analysis using correlation matrix and random forests.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jul. 2021 – Sep. 2021</div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer Intern</h3>
+                            <span>Warshel Institute for Computational Biology<br></span>
+                            <p>Revamped the full-stack data management platform including data registration and validation for miRTarBase.</p>
+                            <p>Integrated Clinical microRNA and gene expression profile modules into miRTarBase.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="hidden">
+            <h2>Skills & Hobbies</h2>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Python</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Golang</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Java</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>SQL</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>HTML</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>CSS</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>JavaScript</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>PHP</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>R</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Linux</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Git</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>React</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>AWS</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Docker</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Kubernetes</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>ArgoCD</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Helm Chart</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Backstage</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Pandas</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Scikit-learn</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon fa-lg"></i></button>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark');
+
+            const button = document.querySelector('.theme-toggle');
+            button.innerHTML = body.classList.contains('dark')
+                ? '<i class="fa-solid fa-sun fa-lg"></i>'
+                : '<i class="fa-solid fa-moon fa-lg"></i>';
+        }
+
+        function showSection(id) {
+            document.querySelectorAll('main section').forEach(s => s.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        // Default section on page load
+        showSection('profile');
+        const text = "ello, I'm";
+        const typingText = document.getElementById('typing-text');
+        let index = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            if (isDeleting) {
+                typingText.innerText = text.substring(0, index--);
+            } else {
+                typingText.innerText = text.substring(0, index++);
+            }
+            let speed = isDeleting ? 75 : 150;
+            if (!isDeleting && index === text.length + 1) {
+                speed = 1200; // Pause at full text before deleting
+                isDeleting = true;
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+                speed = 500; // Pause before typing again
+            }
+            setTimeout(typeEffect, speed);
+        }
+        typeEffect();
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                document.querySelectorAll('.timeline-item.active').forEach(activeItem => {
+                    if (activeItem !== this) {
+                        activeItem.classList.remove('active');
+                    }
+                });
+                this.classList.add('active');
+            });
+
+            item.addEventListener('click', function () {
+                document.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+    </script>
+</body>
+</html>
